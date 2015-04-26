@@ -1,0 +1,411 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+     android:paddingRight="5dp"
+     android:paddingLeft="5dp"
+     tools:context="net.americanairguns.classifiedads.TrajectoryCalculatorFragment"
+     android:id="@+id/scrollView2" >
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:focusable="true"
+         android:focusableInTouchMode="true" >
+
+<!-- /////// Pellet Input /////////////////////////////////////////////// -->
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:text="Pellet Input"
+             android:id="@+id/textView5"
+             style="?android:attr/listSeparatorTextViewStyle"
+             android:layout_marginTop="10dp" />
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Weight:"
+                 android:id="@+id/textView"
+                 android:layout_toStartOf="@+id/pelletWeight"
+                 android:layout_alignParentBottom="false"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="numberDecimal"
+                 android:hint="(grains)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/pelletWeight"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Ballistic Coefficient:"
+                 android:id="@+id/textView2"
+                 android:layout_toStartOf="@+id/pelletBallisticCoef"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="numberDecimal"
+                 android:hint="(bc)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/pelletBallisticCoef"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Diameter:"
+                 android:id="@+id/textView3"
+                 android:layout_toStartOf="@+id/pelletDiameter"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="numberDecimal"
+                 android:hint="(inches)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/pelletDiameter"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Muzzle Velocity:"
+                 android:id="@+id/textView4"
+                 android:layout_toStartOf="@+id/pelletMuzzleVel"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="numberDecimal"
+                 android:hint="(ft/s)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/pelletMuzzleVel"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+<!-- /////// Scope Input /////////////////////////////////////////////// -->
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:text="Score Input"
+             android:id="@+id/textView6"
+             style="?android:attr/listSeparatorTextViewStyle"
+             android:layout_marginTop="20dp" />
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Height Over Bore:"
+                 android:id="@+id/textView7"
+                 android:layout_toStartOf="@+id/scopeHAB"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="numberDecimal"
+                 android:hint="(inches)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/scopeHAB"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Clicks / MOA:"
+                 android:id="@+id/textView8"
+                 android:layout_toStartOf="@+id/scopeMOA"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="number"
+                 android:hint="(moa)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/scopeMOA"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Clicks / Turret Revolution:"
+                 android:id="@+id/textView9"
+                 android:layout_toStartOf="@+id/scopeClicks"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="numberDecimal"
+                 android:hint="(moa)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/scopeClicks"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <CheckBox
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Use Old Bushnell Turret"
+                 android:id="@+id/useOldBushnellTurret"
+                 android:singleLine="true"
+                 android:layout_alignParentEnd="true"
+                 android:paddingStart="1dp"
+                 android:paddingEnd="15dp"/>
+         </RelativeLayout>
+
+<!-- /////// Range Input /////////////////////////////////////////////// -->
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:text="Range Input"
+             android:id="@+id/textView10"
+             style="?android:attr/listSeparatorTextViewStyle"
+             android:layout_marginTop="20dp" />
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Zero Range:"
+                 android:id="@+id/textView11"
+                 android:layout_toStartOf="@+id/rangeZero"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="number"
+                 android:hint="(yds)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/rangeZero"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Starting Range:"
+                 android:id="@+id/textView12"
+                 android:layout_toStartOf="@+id/rangeStart"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="number"
+                 android:hint="(yds)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/rangeStart"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Ending Range:"
+                 android:id="@+id/textView13"
+                 android:layout_toStartOf="@+id/rangeEnd"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="number"
+                 android:hint="(yds)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/rangeEnd"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Range Increment:"
+                 android:id="@+id/textView14"
+                 android:layout_toStartOf="@+id/rangeIncrement"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="number"
+                 android:hint="(yds)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/rangeIncrement"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+<!-- /////// Wind Input /////////////////////////////////////////////// -->
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:text="Wind Input"
+             android:id="@+id/textView15"
+             style="?android:attr/listSeparatorTextViewStyle"
+             android:layout_marginTop="20dp" />
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Speed:"
+                 android:id="@+id/textView16"
+                 android:layout_toStartOf="@+id/windSpeed"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="number"
+                 android:hint="(mph)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/windSpeed"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Direction:"
+                 android:id="@+id/textView17"
+                 android:layout_toStartOf="@+id/windDirection"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="number"
+                 android:hint="(degrees)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/windDirection"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+         <Button
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Calculate Trajectory"
+             android:id="@+id/calcTrajectory" />
+     </LinearLayout>
+</ScrollView>

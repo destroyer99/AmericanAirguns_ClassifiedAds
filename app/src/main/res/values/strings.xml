@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Classified Ads</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_display_ad">DisplayAdActivity</string>
+    <!--TODO: Remove mobilePassword from final release.-->
+    <string name="mobilePassword">Y5nmR6as3bB</string>
+    <string name="action_sort">Sort</string>
+    <string name="button_next_page">Next Page</string>
+    <string name="btnPrevious">Previous Page</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="drawer_name">Filters</string>
+    <string name="drawer_open">drawerOpen</string>
+    <string name="drawer_close">drawerClose</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="filter_more">More…</string>
+    <string name="filter_less">Less…</string>
+    <string name="app_label">searchTxt</string>
+    <string name="search_hint">Search Keyword…</string>
+
+    <string-array name="drawer_items_filters_all">
+        <item>All Ads</item>
+        <item>For Sale</item>
+        <item>Wanted</item>
+        <item>Trade</item>
+        <item>More…</item>
+    </string-array>
+
+    <array name="drawer_item_icons_all">
+        <item>@drawable/star</item>
+        <item>@drawable/specialoffer</item>
+        <item>@drawable/cost</item>
+        <item>@drawable/communication</item>
+        <item>@drawable/ic_action_next_item</item>
+    </array>
+
+    <string-array name="drawer_items_filters_all_more">
+        <item>All Ads</item>
+        <item>For Sale</item>
+        <item>Wanted</item>
+        <item>Trade</item>
+        <item>Less…</item>
+        <item>By Item Type</item>
+        <item>By Username</item>
+        <item>By Subject</item>
+        <item>By Price</item>
+    </string-array>
+
+    <array name="drawer_item_icons_all_more">
+        <item>@drawable/star</item>
+        <item>@drawable/specialoffer</item>
+        <item>@drawable/cost</item>
+        <item>@drawable/communication</item>
+        <item>@drawable/ic_action_expand</item>
+        <item>@drawable/tag</item>
+        <item>@drawable/customers</item>
+        <item>@drawable/pencil</item>
+        <item>@drawable/invoice2</item>
+    </array>
+    <array name="itemTypes">
+        <item>Rifles</item>
+        <item>Pistols</item>
+        <item>Optics</item>
+        <item>Accessories</item>
+    </array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="md__drawerOpenIndicatorDesc">Close drawer</string>
+    <string name="md__drawerClosedIndicatorDesc">Open drawer</string>
+    <string name="askingPrice">askingPrice</string>
+    <string name="Price">Price</string>
+    <string name="name">userName</string>
+    <string name="Name">Name</string>
+    <string name="adId">adId</string>
+    <string name="Date">Date</string>
+    <string name="ItemType">Item Type</string>
+    <string name="adItem">adItem</string>
+    <string name="swipeRefresh">Pull Down To Refresh…</string>
+    <string name="iconDesc">adIcon</string>
+    <string name="firstRunText">Use the Drawer to navigate the app. Press the options button on your phone, the app icon/title at the top, or swipe right from the left edge of your screen.\n\nThank you for downloading the app!\n\nEnjoy!</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="calc_name">Tools</string>
+
+</resources>

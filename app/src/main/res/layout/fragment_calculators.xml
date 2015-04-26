@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+     android:paddingRight="5dp"
+     android:paddingLeft="5dp"
+     tools:context="net.americanairguns.classifiedads.CalculatorsFragment"
+     android:id="@+id/scrollView3" >
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:id="@+id/linearLayout"
+         android:focusable="true"
+         android:focusableInTouchMode="true" >
+
+<!-- /////// Energy Calc /////////////////////////////////////////////// -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Energy Calculator"
+            android:id="@+id/textView1"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_marginTop="10dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               android:text="Weight:"
+               android:id="@+id/textView2"
+               android:layout_toStartOf="@+id/energyWeight"
+               android:layout_alignParentBottom="false"
+               android:layout_centerVertical="true"
+               android:gravity="end" />
+
+            <EditText
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:inputType="numberDecimal"
+               android:hint="(grains)"
+               android:ems="10"
+               android:selectAllOnFocus="true"
+               android:id="@+id/energyWeight"
+               android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               android:text="Velocity:"
+               android:id="@+id/textView4"
+               android:layout_toStartOf="@+id/energyVelocity"
+               android:layout_centerVertical="true"
+               android:gravity="end" />
+
+            <EditText
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:inputType="numberDecimal"
+               android:hint="(fps)"
+               android:ems="10"
+               android:selectAllOnFocus="true"
+               android:id="@+id/energyVelocity"
+               android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               android:text="Energy ="
+               android:id="@+id/textView3"
+               android:layout_toStartOf="@+id/energy"
+               android:layout_centerVertical="true"
+               android:gravity="end" />
+
+           <EditText
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:inputType="numberDecimal"
+               android:hint="(ft.lbs)"
+               android:ems="10"
+               android:selectAllOnFocus="true"
+               android:id="@+id/energy"
+               android:enabled="false"
+               android:focusable="false"
+               android:focusableInTouchMode="false"
+               android:textColor="@color/white"
+               android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+<!-- /////// POI Calculator /////////////////////////////////////////////// -->
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:text="Click to POI Calculator"
+             android:id="@+id/textView10"
+             style="?android:attr/listSeparatorTextViewStyle"
+             android:layout_marginTop="20dp" />
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Clicks/MOA at 100yds:"
+                 android:id="@+id/textView11"
+                 android:layout_toStartOf="@+id/clicksMOA"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="number"
+                 android:hint="(clicks/MOA)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/clicksMOA"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Target Distance:"
+                 android:id="@+id/textView12"
+                 android:layout_toStartOf="@+id/poiDistance"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="number"
+                 android:hint="(yds)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/poiDistance"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Clicks &#916;:"
+                 android:id="@+id/textView13"
+                 android:layout_toStartOf="@+id/clicksDelta"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="number"
+                 android:hint="(&#916;clicks)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/clicksDelta"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="POI &#916; ="
+                 android:id="@+id/textView14"
+                 android:layout_toStartOf="@+id/poiDelta"
+                 android:layout_centerVertical="true"
+                 android:gravity="end" />
+
+             <EditText
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="number"
+                 android:hint="(&#916;inches)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/poiDelta"
+                 android:enabled="false"
+                 android:focusable="false"
+                 android:focusableInTouchMode="false"
+                 android:textColor="@color/white"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+<!-- /////// Conversions /////////////////////////////////////////////// -->
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:text="Conversions"
+             android:id="@+id/textView6"
+             style="?android:attr/listSeparatorTextViewStyle"
+             android:layout_marginTop="20dp" />
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Yards"
+                 android:id="@+id/textView22"
+                 android:layout_centerVertical="true"
+                 android:gravity="end"
+                 android:layout_toStartOf="@+id/convYds" />
+
+             <EditText
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:inputType="numberDecimal"
+                 android:hint="(yds)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/convYds"
+                 android:layout_toStartOf="@+id/textView21" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="="
+                 android:paddingStart="5dp"
+                 android:paddingEnd="5dp"
+                 android:layout_centerVertical="true"
+                 android:gravity="center"
+                 android:id="@+id/textView21"
+                 android:layout_toStartOf="@+id/convMeters" />
+
+             <EditText
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:inputType="numberDecimal"
+                 android:hint="(m)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/convMeters"
+                 android:layout_toStartOf="@+id/textView20" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Meters"
+                 android:id="@+id/textView20"
+                 android:layout_centerVertical="true"
+                 android:gravity="end"
+                 android:layout_alignParentEnd="true" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Ft/Sec"
+                 android:id="@+id/textView7"
+                 android:layout_centerVertical="true"
+                 android:gravity="end"
+                 android:layout_toStartOf="@+id/velocityFPS" />
+
+             <EditText
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:inputType="numberDecimal"
+                 android:hint="(ft/s)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/velocityFPS"
+                 android:layout_toStartOf="@+id/textView18" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="="
+                 android:paddingStart="5dp"
+                 android:paddingEnd="5dp"
+                 android:layout_centerVertical="true"
+                 android:gravity="center"
+                 android:id="@+id/textView18"
+                 android:layout_toStartOf="@+id/velocityMPS" />
+
+             <EditText
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:inputType="numberDecimal"
+                 android:hint="(m/s)"
+                 android:ems="10"
+                 android:selectAllOnFocus="true"
+                 android:id="@+id/velocityMPS"
+                 android:layout_toStartOf="@+id/textView19" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="M/Sec"
+                 android:id="@+id/textView19"
+                 android:layout_centerVertical="true"
+                 android:gravity="end"
+                 android:layout_alignParentEnd="true"
+                 android:layout_marginRight="3dp" />
+         </RelativeLayout>
+     </LinearLayout>
+ </ScrollView>

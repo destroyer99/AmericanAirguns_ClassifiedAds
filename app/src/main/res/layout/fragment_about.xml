@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.americanairguns.classifiedads.AboutFragment">
+
+    <TextView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/aboutTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.airguns.net/classifieds/classifieds.php"
+        android:id="@+id/websiteAdsLink"
+        android:layout_above="@+id/websiteHomeLink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:autoLink="web" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.airguns.net"
+        android:id="@+id/websiteHomeLink"
+        android:layout_above="@+id/emailBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:autoLink="web" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:id="@+id/emailBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>

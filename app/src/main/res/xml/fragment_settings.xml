@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Theme">
+        <SwitchPreference
+            android:title="Choose Theme"
+            android:summary="Choose between a light or dark theme."
+            android:defaultValue="false"
+            android:switchTextOff="Dark"
+            android:switchTextOn="Light"
+            android:key="themeSwitch" />
+
+        <SwitchPreference
+            android:title="Font Size"
+            android:key="fontSize"
+            android:defaultValue="false"
+            android:summary="Choose Font Size..."
+            android:switchTextOff="Small"
+            android:switchTextOn="Large" />
+    </PreferenceCategory>
+
+    <!--<PreferenceCategory android:title="Development">
+        <Preference
+            android:title="Update Web Database"
+            android:key="updateWebDB"
+            android:summary="Update the web database" />
+
+        <Preference
+            android:title="Delete Database"
+            android:key="deleteDB"
+            android:summary="Delete the database" />
+
+        <SwitchPreference
+            android:title="Download Images"
+            android:summary="Download Images"
+            android:defaultValue="true"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
+            android:key="downloadImages" />
+
+        <SwitchPreference
+            android:title="Ad Icons"
+            android:summary="Display Ad Icons"
+            android:defaultValue="false"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
+            android:key="showIcons" />
+
+        <SwitchPreference
+            android:title="Web Admin"
+            android:summary="Use mobile password for web admin utilities."
+            android:defaultValue="false"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
+            android:key="webAdmin" />
+
+        <Preference
+            android:title="Reset 'First Run'"
+            android:key="firstRunBtn"
+            android:summary="Reset to 'First Run' status" />
+
+        <Preference
+            android:title="Download FTP Test"
+            android:key="ftpTest"
+            android:summary="Test FTP Download" />
+    </PreferenceCategory>-->
+</PreferenceScreen>

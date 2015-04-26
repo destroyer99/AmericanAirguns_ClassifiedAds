@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Development">
+        <Preference
+                              android:title="Update Web Database"
+                              android:key="updateWebDB"
+                              android:summary="Update the web DEV database" />
+
+        <Preference
+            android:title="Delete Database"
+            android:key="deleteDB"
+            android:summary="Delete the local database" />
+
+        <SwitchPreference
+            android:title="Download Images"
+            android:summary="Download Images"
+            android:defaultValue="true"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
+            android:key="downloadImages" />
+
+        <SwitchPreference
+            android:title="Ad Icons"
+            android:summary="Display Ad Icons"
+            android:defaultValue="true"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
+            android:key="showIcons" />
+
+        <SwitchPreference
+            android:title="Web Admin"
+            android:summary="Use mobile password for web admin utilities"
+            android:defaultValue="false"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
+            android:key="webAdmin" />
+
+        <Preference
+            android:title="Reset 'First Run'"
+            android:key="firstRunBtn"
+            android:summary="Reset app to 'First Run' status" />
+
+        <Preference
+            android:title="Download/Download FTP Test"
+            android:key="ftpTest"
+            android:summary="Test FTP Upload/Download" />
+
+        <Preference
+            android:title="Upload Ad"
+            android:key="uploadAd"
+            android:summary="Upload a dummy ad to the DEV database" />
+
+        <Preference
+            android:title="Delete Ad"
+            android:key="deleteAd"
+            android:summary="Delete an ad from the DEV database" />
+
+        <EditTextPreference
+            android:title="Set Price Filter Step"
+            android:key="priceFilterStep"
+            android:defaultValue="50"
+            android:editable="true"
+            android:inputType="number"
+            android:summary="Set the increment step for the price filter slider bar" />
+
+        <EditTextPreference
+            android:title="Set Price Filter Max"
+            android:key="priceFilterMax"
+            android:defaultValue="2500"
+            android:editable="true"
+            android:inputType="number"
+            android:summary="Set the dollar amount for the price filter slider bar" />
+
+        <SwitchPreference
+            android:title="Calculator Values"
+            android:summary="Set Calculator Default Values"
+            android:defaultValue="true"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
+            android:key="calcDefVals" />
+    </PreferenceCategory>
+</PreferenceScreen>

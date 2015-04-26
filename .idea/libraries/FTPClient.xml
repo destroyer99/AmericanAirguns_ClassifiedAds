@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="FTPClient">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/FTPClient.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

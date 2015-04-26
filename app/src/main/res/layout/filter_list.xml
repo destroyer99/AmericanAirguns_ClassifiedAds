@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExpandableListView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:choiceMode="singleChoice"
+    android:background="@android:color/background_light"
+    android:groupIndicator="@android:color/transparent"
+    android:childDivider="#6e000000"
+    android:id="@+id/filterList"
+    android:minHeight="140dp" />
