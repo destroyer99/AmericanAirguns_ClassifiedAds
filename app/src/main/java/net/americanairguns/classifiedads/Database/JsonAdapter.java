@@ -1,9 +1,12 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.Database;
 
 import android.content.Context;
 import android.os.AsyncTask;
 import android.text.Html;
 import android.util.Log;
+
+import net.americanairguns.classifiedads.Database.DBAdapter;
+import net.americanairguns.classifiedads.Fragments.ClassifiedsFragment;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -157,6 +160,6 @@ public class JsonAdapter extends AsyncTask<String, Void, String>{
     }
 
     public interface JsonCallback {
-        public void onTaskDone();
+        void onTaskDone();
     }
 }

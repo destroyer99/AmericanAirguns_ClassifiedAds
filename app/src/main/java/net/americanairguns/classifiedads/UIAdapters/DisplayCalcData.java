@@ -1,4 +1,4 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.UIAdapters;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TableLayout;
 import android.widget.TextView;
+
+import net.americanairguns.classifiedads.R;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;

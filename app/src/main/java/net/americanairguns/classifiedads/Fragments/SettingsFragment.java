@@ -1,9 +1,11 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.Fragments;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 import android.view.View;
+
+import net.americanairguns.classifiedads.R;
 
 // TODO: Add additional settings for: Font Size,
 public class SettingsFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
@@ -50,6 +52,6 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String s) {}
 
     public interface ActivityCallback {
-        public void CloseDrawer();
+        void CloseDrawer();
     }
 }

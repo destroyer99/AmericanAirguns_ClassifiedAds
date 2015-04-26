@@ -1,15 +1,17 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.UIAdapters;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import net.americanairguns.classifiedads.Activities.MainActivity;
+import net.americanairguns.classifiedads.R;
 
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -22,9 +24,9 @@ public class DrawerAdapter extends BaseExpandableListAdapter {
     private Map<String, List<Object>> drawerItems;
 
     private Integer currentFilter, fontSize;
-    private Main.mainInterface mainInterface;
+    private MainActivity.mainInterface mainInterface;
 
-    public DrawerAdapter(Context context, List<String> drawerHeaders, LinkedHashMap<String, List<Object>> drawerItems, Integer currentFilter, Main.mainInterface mainInterface){
+    public DrawerAdapter(Context context, List<String> drawerHeaders, LinkedHashMap<String, List<Object>> drawerItems, Integer currentFilter, MainActivity.mainInterface mainInterface){
         this.context = context;
         this.drawerHeaders = drawerHeaders;
         this.drawerItems = drawerItems;

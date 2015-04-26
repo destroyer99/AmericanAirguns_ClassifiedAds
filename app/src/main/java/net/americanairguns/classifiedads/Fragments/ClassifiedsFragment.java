@@ -1,4 +1,4 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.Fragments;
 
 import android.app.AlertDialog;
 import android.app.Fragment;
@@ -23,13 +23,20 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import net.americanairguns.classifiedads.UIAdapters.Ad;
+import net.americanairguns.classifiedads.UIAdapters.AdListAdapter;
+import net.americanairguns.classifiedads.Database.DBAdapter;
+import net.americanairguns.classifiedads.Database.JsonAdapter;
+import net.americanairguns.classifiedads.R;
+import net.americanairguns.classifiedads.Database.WebDBAdapter;
+
 import java.util.Arrays;
 import java.util.concurrent.ExecutionException;
 
 
 public class ClassifiedsFragment extends Fragment {
 
-    static protected enum cursorIndex {AD_ID, AD_SUBMIT_DATE, AD_TIME_STAMP,
+    protected enum cursorIndex {AD_ID, AD_SUBMIT_DATE, AD_TIME_STAMP,
         AD_TYPE, AD_ITEM, AD_SUBJECT, AD_TEXT, TRADE_TEXT, ASKING_PRICE, PLUS_SHIPPING,
         NAME, REMOTE_ADDRESS, EMAIL_ADDRESS, PHONE_NUMBER, TIME_ZONE,
         IMAGE_1_FILE, IMAGE_2_FILE, IMAGE_3_FILE, IMAGE_4_FILE, IMAGE_5_FILE,
@@ -265,12 +272,12 @@ public class ClassifiedsFragment extends Fragment {
     }
 
     public interface FragmentCallback {
-        public void onTaskDone();
-        public void onTaskFailed(String errMsg);
+        void onTaskDone();
+        void onTaskFailed(String errMsg);
     }
 
     public interface ActivityCallback {
-        public void CloseDrawer();
-        public void CloseDrawer(Integer timeout);
+        void CloseDrawer();
+        void CloseDrawer(Integer timeout);
     }
 }

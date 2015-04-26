@@ -1,8 +1,11 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.UIAdapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import net.americanairguns.classifiedads.Fragments.CalculatorsFragment;
+import net.americanairguns.classifiedads.Fragments.TrajectoryCalculatorFragment;
 
 import java.util.List;
 

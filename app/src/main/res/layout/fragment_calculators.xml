@@ -7,7 +7,7 @@
      android:paddingBottom="5dp"
      android:paddingRight="5dp"
      android:paddingLeft="5dp"
-     tools:context="net.americanairguns.classifiedads.CalculatorsFragment"
+     tools:context="net.americanairguns.classifiedads.Fragments.CalculatorsFragment"
      android:id="@+id/scrollView3" >
 
      <LinearLayout

@@ -1,4 +1,4 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.Fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ScrollView;
+
+import net.americanairguns.classifiedads.R;
 
 public class CalculatorsFragment extends Fragment {
 

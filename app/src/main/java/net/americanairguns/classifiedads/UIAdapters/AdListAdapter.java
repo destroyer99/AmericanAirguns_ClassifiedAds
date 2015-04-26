@@ -1,4 +1,4 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.UIAdapters;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import net.americanairguns.classifiedads.R;
 
 public class AdListAdapter extends ArrayAdapter<Ad> {
 

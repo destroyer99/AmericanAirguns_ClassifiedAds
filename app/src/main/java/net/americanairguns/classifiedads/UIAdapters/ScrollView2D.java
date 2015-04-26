@@ -1,4 +1,4 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.UIAdapters;
 
 import android.content.Context;
 import android.util.AttributeSet;

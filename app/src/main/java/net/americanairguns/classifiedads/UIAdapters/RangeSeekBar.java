@@ -1,4 +1,4 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.UIAdapters;
 
 import java.math.BigDecimal;
 
@@ -12,10 +12,11 @@ import java.math.BigDecimal;
  import android.graphics.RectF;
  import android.os.Bundle;
  import android.os.Parcelable;
- import android.util.Log;
- import android.view.MotionEvent;
+import android.view.MotionEvent;
  import android.view.ViewConfiguration;
  import android.widget.ImageView;
+
+import net.americanairguns.classifiedads.R;
 
 /**
   * Widget that lets users select a minimum and maximum value on a given numerical range. The range value types can be one of Long, Double, Integer, Float, Short, Byte or BigDecimal.<br />

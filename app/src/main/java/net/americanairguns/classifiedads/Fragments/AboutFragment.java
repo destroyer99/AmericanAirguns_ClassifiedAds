@@ -1,4 +1,4 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.Fragments;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import net.americanairguns.classifiedads.R;
 
 public class AboutFragment extends Fragment {
 
@@ -51,6 +53,6 @@ public class AboutFragment extends Fragment {
     }
 
     public interface ActivityCallback {
-        public void CloseDrawer();
+        void CloseDrawer();
     }
 }

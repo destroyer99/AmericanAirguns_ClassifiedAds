@@ -1,4 +1,4 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.Activities;
 
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
@@ -10,12 +10,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import net.americanairguns.classifiedads.R;
+import net.americanairguns.classifiedads.UIAdapters.TabsPagerAdapter;
+import net.americanairguns.classifiedads.Fragments.TrajectoryCalculatorFragment;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class CalculatorActivity extends FragmentActivity implements ActionBar.TabListener,
-                                            TrajectoryCalculatorFragment.ActivityCallback {
+        TrajectoryCalculatorFragment.ActivityCallback {
 
     private List<String> tabs = new ArrayList<String>(Arrays.asList("Calculators/\nConverters", "Trajectory\nCalculator"));//, "Trajectory\nData Table"};
     private Boolean dataTableCreated = false;

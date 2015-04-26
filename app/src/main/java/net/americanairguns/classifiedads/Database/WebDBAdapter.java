@@ -1,4 +1,4 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.Database;
 
 import android.os.AsyncTask;
 import android.text.Html;

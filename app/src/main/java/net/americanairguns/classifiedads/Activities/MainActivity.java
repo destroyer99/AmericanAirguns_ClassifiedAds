@@ -1,4 +1,4 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.Activities;
 
 import android.annotation.SuppressLint;
  import android.app.Activity;
@@ -30,7 +30,17 @@ import android.annotation.SuppressLint;
  import android.widget.TextView;
  import android.widget.Toast;
 
- import java.util.ArrayList;
+import net.americanairguns.classifiedads.Fragments.AboutFragment;
+import net.americanairguns.classifiedads.Fragments.ClassifiedsFragment;
+import net.americanairguns.classifiedads.Database.DBAdapter;
+import net.americanairguns.classifiedads.Fragments.DevelopmentFragment;
+import net.americanairguns.classifiedads.UIAdapters.DrawerAdapter;
+import net.americanairguns.classifiedads.UIAdapters.DrawerItem;
+import net.americanairguns.classifiedads.R;
+import net.americanairguns.classifiedads.UIAdapters.RangeSeekBar;
+import net.americanairguns.classifiedads.Fragments.SettingsFragment;
+
+import java.util.ArrayList;
  import java.util.Arrays;
  import java.util.LinkedHashMap;
  import java.util.List;
@@ -40,8 +50,8 @@ import android.annotation.SuppressLint;
  import static net.americanairguns.classifiedads.R.array.itemTypes;
 
 
-public class Main extends Activity implements ClassifiedsFragment.ActivityCallback, AboutFragment.ActivityCallback,
-         SettingsFragment.ActivityCallback, DevelopmentFragment.ActivityCallback {
+public class MainActivity extends Activity implements ClassifiedsFragment.ActivityCallback, AboutFragment.ActivityCallback,
+        SettingsFragment.ActivityCallback, DevelopmentFragment.ActivityCallback {
 
      private ExpandableListView drawerList;
      private DrawerLayout drawerLayout;
@@ -440,7 +450,7 @@ public class Main extends Activity implements ClassifiedsFragment.ActivityCallba
              case 1: {// Tools
                  updateFilterTint = false;
                  drawerLayout.closeDrawer(GravityCompat.START);
-                 startActivity(new Intent(Main.this, CalculatorActivity.class));
+                 startActivity(new Intent(MainActivity.this, CalculatorActivity.class));
                  return;
              }
              case 2: {// About
@@ -487,7 +497,7 @@ public class Main extends Activity implements ClassifiedsFragment.ActivityCallba
      }
 
      public interface mainInterface {
-         public void changeItemTint(View view);
+         void changeItemTint(View view);
      }
 
      @Override

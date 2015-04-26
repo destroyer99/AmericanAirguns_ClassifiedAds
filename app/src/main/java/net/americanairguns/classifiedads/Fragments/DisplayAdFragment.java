@@ -1,4 +1,4 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.Fragments;
 
 import android.app.AlertDialog;
 import android.app.Fragment;
@@ -18,11 +18,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import net.americanairguns.classifiedads.Database.DBAdapter;
+import net.americanairguns.classifiedads.Database.GetImages;
+import net.americanairguns.classifiedads.R;
+import net.americanairguns.classifiedads.Database.WebDBAdapter;
+
 import java.util.concurrent.ExecutionException;
 
 public class DisplayAdFragment extends Fragment {
 
-    static protected enum cursorIndex {AD_ID, AD_SUBMIT_DATE, AD_TIME_STAMP,
+    protected enum cursorIndex {AD_ID, AD_SUBMIT_DATE, AD_TIME_STAMP,
         AD_TYPE, AD_ITEM, AD_SUBJECT, AD_TEXT, TRADE_TEXT, ASKING_PRICE, PLUS_SHIPPING,
         NAME, REMOTE_ADDRESS, EMAIL_ADDRESS, PHONE_NUMBER, TIME_ZONE,
         IMAGE_1_FILE, IMAGE_2_FILE, IMAGE_3_FILE, IMAGE_4_FILE, IMAGE_5_FILE,

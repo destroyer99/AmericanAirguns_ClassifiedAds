@@ -1,4 +1,4 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.Fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,6 +12,9 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import net.americanairguns.classifiedads.UIAdapters.DisplayCalcData;
+import net.americanairguns.classifiedads.R;
 
 public class TrajectoryCalculatorFragment extends Fragment {
 
@@ -71,9 +74,9 @@ public class TrajectoryCalculatorFragment extends Fragment {
     }
 
     public interface ActivityCallback {
-        public Fragment getTableFragment();
-        public void tableCreated(boolean tableCreated);
-        public void changeTab(int position);
-        public void removeTab(int position);
+        Fragment getTableFragment();
+        void tableCreated(boolean tableCreated);
+        void changeTab(int position);
+        void removeTab(int position);
     }
 }

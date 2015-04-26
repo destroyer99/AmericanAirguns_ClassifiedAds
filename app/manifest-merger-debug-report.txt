@@ -36,7 +36,7 @@ MERGED from com.android.support:support-v4:20.0.0:17:5
 		ADDED from AndroidManifest.xml:11:9
 	android:theme
 		ADDED from AndroidManifest.xml:13:9
-activity#net.americanairguns.classifiedads.Main
+activity#net.americanairguns.classifiedads.Activities.Main
 ADDED from AndroidManifest.xml:16:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:21:13

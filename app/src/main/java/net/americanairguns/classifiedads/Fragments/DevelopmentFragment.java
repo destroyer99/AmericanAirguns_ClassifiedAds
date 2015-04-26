@@ -1,4 +1,4 @@
-package net.americanairguns.classifiedads;
+package net.americanairguns.classifiedads.Fragments;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -11,6 +11,11 @@ import android.text.InputType;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import net.americanairguns.classifiedads.Database.DBAdapter;
+import net.americanairguns.classifiedads.Database.FtpAdapter;
+import net.americanairguns.classifiedads.R;
+import net.americanairguns.classifiedads.Database.WebDBAdapter;
 
 import java.io.File;
 import java.util.concurrent.ExecutionException;
@@ -223,6 +228,6 @@ public class DevelopmentFragment extends PreferenceFragment implements SharedPre
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String s) {}
 
     public interface ActivityCallback {
-        public void CloseDrawer();
+        void CloseDrawer();
     }
 }
